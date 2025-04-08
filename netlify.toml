@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+  command = "vite build"  # This runs the build using vite, bypassing npm run build
+  publish = "dist"        # The directory where the output is stored
+  functions = "netlify/functions"  # If you have serverless functions (optional)
 
-[build.environment]
-  NODE_VERSION = "18"
+[context.production.environment]
+  NODE_ENV = "production"
