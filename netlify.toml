@@ -1,5 +1,5 @@
 [build]
-  command = "vite build"  # This runs the build using vite, bypassing npm run build
+  command = "npm run build"  # This runs the build using vite, bypassing npm run build
   publish = "dist"        # The directory where the output is stored
   functions = "netlify/functions"  # If you have serverless functions (optional)
 
